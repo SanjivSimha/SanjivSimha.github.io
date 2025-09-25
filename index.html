@@ -1,1 +1,146 @@
-<h1> Sanjiv Simha</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sanjiv Simha</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      font-size: 1.1em;
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    nav {
+      width: 180px;
+      min-height: 100vh;
+      background: #fafafa;
+      padding: 30px 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+
+    nav h1 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    main h2 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .text h2 {
+      margin-top: 0;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .text p:first-child {
+      margin-top: 0;
+    }
+
+    .image {
+      flex: 0 0 200px;
+      text-align: center;
+    }
+
+    .image img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 4px;
+      vertical-align: top;
+    }
+
+    .caption {
+      font-size: 0.8em;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    a {
+      color: #0077cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h1>Sanjiv Simha</h1>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="hackathons.html">Hackathons</a>
+    <a href="projects.html">Projects</a>
+    <a href="events.html">Events</a>
+    <a href="https://github.com/sanjivsimha" target="_blank">Github</a>
+    <a href="https://www.linkedin.com/in/sanjivsimha/" target="_blank">LinkedIn</a>
+  </nav>
+
+  <main>
+    <h2>Hello!</h2>
+    <div class="content">
+      <div class="text">
+        <p>
+            I'm Sanjiv Simha, a third-year undergraduate student 
+            at the <a href="https://www.ucsc.edu/">University of California, Santa Cruz</a>, pursuing 
+            a Bachelor of Science in Technology and Information Management.
+        </p>
+        <p> 
+            Currently, I work as a Web Services Technician with 
+            <a href="https://its.ucsc.edu/">UCSC IT Services</a>, 
+            where I contribute to maintaining and enhancing the university’s 
+            WordPress-based content management infrastructure.
+        </p>
+        <p>
+            In my free time I enjoy lifting weights, going on roller coasters,
+            and spending quality time with my family and friends. 
+        </p>
+        <p>Email me: sasimha@ucsc.edu</p>
+      </div>
+      <div class="image">
+        <img src="images/pfp.jpg" alt="Profile Photo" />
+        <p class="caption">California's Great America, August 2025.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
