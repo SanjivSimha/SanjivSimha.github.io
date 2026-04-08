@@ -1,194 +1,182 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects • Sanjiv Simha</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
-  </head>
-  <body>
-    <div class="intro" data-intro aria-hidden="true">
-      <div class="intro-noise"></div>
-      <div class="intro-scan"></div>
-      <svg class="intro-logo" viewBox="0 0 260 160">
-        <text class="intro-letter intro-letter-1" x="10" y="125">S</text>
-        <text class="intro-letter intro-letter-2" x="130" y="125">S</text>
-      </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &middot; Sanjiv Simha</title>
+  <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <div id="intro">
+    <div class="intro-logo">S<span class="accent">S</span><div class="intro-bar"></div></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-brand"><span class="brand-dot"></span>Sanjiv Simha</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/projects/" class="active">Projects</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/hackathons/">Hackathons</a></li>
+    </ul>
+    <a href="mailto:sasimha@ucsc.edu" class="nav-email">Email Me</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile">
+    <a href="/">Home</a>
+    <a href="/education/">Education</a>
+    <a href="/projects/">Projects</a>
+    <a href="/events/">Events</a>
+    <a href="/hackathons/">Hackathons</a>
+    <a href="mailto:sasimha@ucsc.edu">Email</a>
+  </div>
+
+  <header class="page-header">
+    <span class="page-header-bg">PROJECTS</span>
+    <p class="page-header-label">Portfolio</p>
+    <h1 class="page-header-title">Projects</h1>
+    <p class="page-header-sub">A showcase of portfolio projects spanning web development, product strategy, financial modeling, and computer networks.</p>
+  </header>
+
+  <main>
+    <div class="projects-grid">
+
+      <a class="proj-card reveal"
+         href="https://github.com/SanjivSimha/TCP-Based-Peer-to-Peer-Chat-System-with-Custom-Application-Protocol"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/tcpbasedconnection.png" alt="TCP-Based Peer-to-Peer Chat System" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">TCP-Based Peer-to-Peer Chat System</h2>
+          <p class="proj-desc">Custom application protocol with peer discovery and reliable TCP messaging.</p>
+          <span class="proj-link">View on GitHub &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal reveal-d1"
+         href="https://docs.google.com/document/d/10Bh6J7LgaS46FXSU45y5DGhK0z4nVjEwPdfF7_kg1sg/edit?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/proddevforvrsystem.png" alt="Product Development for VR System" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Product Development for VR System</h2>
+          <p class="proj-desc">End-to-end product dissection and systems analysis of a console VR platform.</p>
+          <span class="proj-link">View Report &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal reveal-d2"
+         href="https://docs.google.com/document/d/1nk6AzDToGn0FWg5UmJ5cpotULLIUqiUZi-R_jhReJdc/edit?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/proddevanalysismicrosoft.png" alt="Competitive Strategy Analysis Microsoft" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Product Development &amp; Competitive Strategy &mdash; Microsoft</h2>
+          <p class="proj-desc">Market landscape study with roadmap recommendations for a next-gen productivity suite.</p>
+          <span class="proj-link">View Report &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal"
+         href="https://docs.google.com/document/d/1gYiIRj_sZ9th0EM1dZdyZw8Nd574B_uALraBsGWmH5s/edit?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/financialmodelingvrsystem.png" alt="Financial Modeling VR Entertainment System" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Financial Modeling for Virtual Reality Entertainment System</h2>
+          <p class="proj-desc">Revenue forecast, cost structure, and ROI analysis for an immersive VR entertainment system concept.</p>
+          <span class="proj-link">View Report &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal reveal-d1"
+         href="https://drive.google.com/drive/folders/1lDpxITlJ0D5zi7RWW_FI4RNxYC29FhSu?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/supplychainmanagement.png" alt="Supply Chain Optimization" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Supply Chain Optimization</h2>
+          <p class="proj-desc">Network analysis and cost-reduction strategy to improve fulfillment speed and reliability.</p>
+          <span class="proj-link">View Files &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal reveal-d2"
+         href="https://drive.google.com/drive/folders/1hB6-wY1ffOEvn9UFnuWS7-7j8zWDPrGm?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/adstreamoptimization.png" alt="Adstream Digital Advertising Optimization" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Adstream Digital Advertising Platform Optimization</h2>
+          <p class="proj-desc">Performance audit and workflow redesign to boost campaign throughput and accuracy.</p>
+          <span class="proj-link">View Files &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal"
+         href="https://docs.google.com/document/d/1B2bdm3f5RXOAhx1a9tVjMRinmueALRoB8A0oZt9XfEs/edit?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/financialmodelingfortechdev.png" alt="Financial Modeling for Technology Development" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Financial Modeling for Technology Development</h2>
+          <p class="proj-desc">Investment case modeling with scenario analysis for R&amp;D-led product growth.</p>
+          <span class="proj-link">View Report &rarr;</span>
+        </div>
+      </a>
+
+      <a class="proj-card reveal reveal-d1"
+         href="https://docs.google.com/document/d/107WYCIss5HNznVgofspW6yAsGcJiGNmAbHGSxNrTO5M/edit?usp=sharing"
+         target="_blank" rel="noopener">
+        <div class="proj-img-wrap">
+          <img class="proj-img" src="/images/conceptualdesignforindoormobilerobot.png" alt="Conceptual Design for Indoor Mobile Robot" loading="lazy" />
+          <div class="proj-img-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <h2 class="proj-title">Conceptual Design for Indoor Mobile Robot</h2>
+          <p class="proj-desc">Concept architecture, sensing stack, and mobility analysis for an indoor service robot.</p>
+          <span class="proj-link">View Report &rarr;</span>
+        </div>
+      </a>
+
     </div>
-    <header>
-      <div class="nav">
-        <a class="brand" href="/">
-          <span class="brand-dot"></span>
-          Sanjiv Simha
-        </a>
-        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">☰</button>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/education/">Education</a>
-          <a class="active" href="/projects/">Projects</a>
-          <a href="/events/">Events</a>
-          <a href="/hackathons/">Hackathons</a>
-        </div>
-        <a class="nav-cta" href="mailto:sasimha@ucsc.edu">Email</a>
-      </div>
-    </header>
+  </main>
 
-    <main class="page">
-      <section class="hero fade">
-        <div class="hero-text">
-          <h1>Projects</h1>
-          <p>A showcase of portfolio projects I have completed recently.</p>
-        </div>
-      </section>
+  <footer>
+    <a href="/" class="footer-brand"><span class="brand-dot"></span>Sanjiv Simha</a>
+    <p class="footer-copy">&copy; 2026 Sanjiv Simha &middot; sanjivsimha.com</p>
+    <ul class="footer-links">
+      <li><a href="mailto:sasimha@ucsc.edu">Email</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/projects/">Projects</a></li>
+    </ul>
+  </footer>
 
-      <section class="projects-list fade">
-        <a
-          class="project-card"
-          href="https://github.com/SanjivSimha/TCP-Based-Peer-to-Peer-Chat-System-with-Custom-Application-Protocol"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/tcpbasedconnection.png"
-            alt="TCP-based peer-to-peer chat system preview"
-          />
-          <div class="project-content">
-            <h2>TCP-Based Peer-to-Peer Chat System</h2>
-            <p class="project-subtitle">Custom application protocol with peer discovery and reliable TCP messaging.</p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://docs.google.com/document/d/10Bh6J7LgaS46FXSU45y5DGhK0z4nVjEwPdfF7_kg1sg/edit?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img class="project-image" src="/images/proddevforvrsystem.png" alt="Product dissection report preview" />
-          <div class="project-content">
-            <h2>Product Development for VR System</h2>
-            <p class="project-subtitle">End-to-end product dissection and systems analysis of a console VR platform.</p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://docs.google.com/document/d/1nk6AzDToGn0FWg5UmJ5cpotULLIUqiUZi-R_jhReJdc/edit?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/proddevanalysismicrosoft.png"
-            alt="Competitive analysis report preview"
-          />
-          <div class="project-content">
-            <h2>Product Development & Competitive Strategy Analysis - Microsoft</h2>
-            <p class="project-subtitle">
-              Market landscape study with roadmap recommendations for a next-gen productivity suite.
-            </p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://docs.google.com/document/d/1gYiIRj_sZ9th0EM1dZdyZw8Nd574B_uALraBsGWmH5s/edit?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/financialmodelingvrsystem.png"
-            alt="Financial model report preview"
-          />
-          <div class="project-content">
-            <h2>Financial Modeling for Virtual Reality Entertainment System</h2>
-            <p class="project-subtitle">
-              Revenue forecast, cost structure, and ROI analysis for an immersive VR entertainment system concept.
-            </p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://drive.google.com/drive/folders/1lDpxITlJ0D5zi7RWW_FI4RNxYC29FhSu?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/supplychainmanagement.png"
-            alt="Supply chain optimization report preview"
-          />
-          <div class="project-content">
-            <h2>Supply Chain Optimization</h2>
-            <p class="project-subtitle">
-              Network analysis and cost-reduction strategy to improve fulfillment speed and reliability.
-            </p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://drive.google.com/drive/folders/1hB6-wY1ffOEvn9UFnuWS7-7j8zWDPrGm?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/adstreamoptimization.png"
-            alt="Digital advertising optimization report preview"
-          />
-          <div class="project-content">
-            <h2>Adstream Digital Advertising Platform Optimization</h2>
-            <p class="project-subtitle">
-              Performance audit and workflow redesign to boost campaign throughput and accuracy.
-            </p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://docs.google.com/document/d/1B2bdm3f5RXOAhx1a9tVjMRinmueALRoB8A0oZt9XfEs/edit?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/financialmodelingfortechdev.png"
-            alt="Technology development financial model preview"
-          />
-          <div class="project-content">
-            <h2>Financial Modeling for Technology Development</h2>
-            <p class="project-subtitle">
-              Investment case modeling with scenario analysis for R&amp;D-led product growth.
-            </p>
-          </div>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://docs.google.com/document/d/107WYCIss5HNznVgofspW6yAsGcJiGNmAbHGSxNrTO5M/edit?usp=sharing"
-          target="_blank"
-          rel="noopener"
-        >
-          <img
-            class="project-image"
-            src="/images/conceptualdesignforindoormobilerobot.png"
-            alt="Indoor mobile robot concept design preview"
-          />
-          <div class="project-content">
-            <h2>Conceptual Design for Indoor Mobile Robot</h2>
-            <p class="project-subtitle">
-              Concept architecture, sensing stack, and mobility analysis for an indoor service robot.
-            </p>
-          </div>
-        </a>
-      </section>
-    </main>
-
-    <script src="/script.js"></script>
-  </body>
+  <script src="/script.js"></script>
+</body>
 </html>

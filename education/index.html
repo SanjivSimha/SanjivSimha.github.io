@@ -1,86 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Education • Sanjiv Simha</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
-  </head>
-  <body>
-    <div class="intro" data-intro aria-hidden="true">
-      <div class="intro-noise"></div>
-      <div class="intro-scan"></div>
-      <svg class="intro-logo" viewBox="0 0 260 160">
-        <text class="intro-letter intro-letter-1" x="10" y="125">S</text>
-        <text class="intro-letter intro-letter-2" x="130" y="125">S</text>
-      </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education &middot; Sanjiv Simha</title>
+  <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <div id="intro">
+    <div class="intro-logo">S<span class="accent">S</span><div class="intro-bar"></div></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <a href="/" class="nav-brand"><span class="brand-dot"></span>Sanjiv Simha</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/education/" class="active">Education</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li><a href="/hackathons/">Hackathons</a></li>
+    </ul>
+    <a href="mailto:sasimha@ucsc.edu" class="nav-email">Email Me</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile">
+    <a href="/">Home</a>
+    <a href="/education/">Education</a>
+    <a href="/projects/">Projects</a>
+    <a href="/events/">Events</a>
+    <a href="/hackathons/">Hackathons</a>
+    <a href="mailto:sasimha@ucsc.edu">Email</a>
+  </div>
+
+  <header class="page-header">
+    <span class="page-header-bg">EDU</span>
+    <p class="page-header-label">Background</p>
+    <h1 class="page-header-title">Education</h1>
+    <p class="page-header-sub">University of California, Santa Cruz &mdash; pursuing a B.S. in Technology and Information Management, expected June 2026.</p>
+  </header>
+
+  <section class="edu-section reveal">
+    <div class="edu-grid">
+      <div class="edu-main">
+        <p class="edu-date">Fall 2023 &ndash; June 2026</p>
+        <h2 class="edu-uni">UC Santa Cruz</h2>
+        <p class="edu-degree">
+          Bachelor of Science<br>
+          Technology and Information Management
+        </p>
+        <div class="edu-badges">
+          <span class="edu-badge hl">Dean&rsquo;s List &mdash; Winter 2024</span>
+          <span class="edu-badge hl">Dean&rsquo;s List &mdash; Winter 2025</span>
+          <span class="edu-badge">TIM Major</span>
+          <span class="edu-badge">In Progress</span>
+        </div>
+        <p class="edu-body">
+          Currently working as a Web Services Technician with UCSC IT Services,
+          maintaining and enhancing the university&rsquo;s WordPress-based CMS infrastructure
+          and building custom block functionality using PHP, CSS, and JavaScript.
+        </p>
+      </div>
+      <div class="edu-img-side">
+        <img class="edu-seal" src="/images/ucsc-seal.jpg" alt="UC Santa Cruz Seal" loading="lazy" />
+      </div>
     </div>
-    <header>
-      <div class="nav">
-        <a class="brand" href="/">
-          <span class="brand-dot"></span>
-          Sanjiv Simha
-        </a>
-        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">☰</button>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a class="active" href="/education/">Education</a>
-          <a href="/projects/">Projects</a>
-          <a href="/events/">Events</a>
-          <a href="/hackathons/">Hackathons</a>
-        </div>
-        <a class="nav-cta" href="mailto:sasimha@ucsc.edu">Email</a>
-      </div>
-    </header>
+  </section>
 
-    <main class="page">
-      <section class="hero fade">
-        <div class="hero-text">
-          <h1>Education</h1>
-          <p><strong>University of California, Santa Cruz</strong><br />B.S. Technology and Information Management</p>
-          <p>Fall 2023 – June 2026</p>
-          <p>
-            Relevant Coursework: Business Information Systems, Mangement of Technology, Computer Networks,
-             Optimization for Management 
-          </p>
-          <p>Dean's List: Winter 2024, Winter 2025</p>
-        </div>
-        <div class="hero-card edu-card">
-          <img class="media edu-media" src="/images/ucsc-seal.jpg" alt="UCSC" />
-          <div class="metrics">
-            <div class="metric">
-              <span class="value">TIM</span>
-              <span class="label">Tech & Info Mgmt</span>
-            </div>
-            <div class="metric">
-              <span class="value">UC</span>
-              <span class="label">Santa Cruz</span>
-            </div>
-            <div class="metric">
-              <span class="value">2023-26</span>
-              <span class="label">In progress</span>
-            </div>
-          </div>
-        </div>
-      </section>
+  <section class="courses-section reveal">
+    <p class="courses-eyebrow">Coursework</p>
+    <div class="courses-grid">
+      <div class="course-cell" data-n="01">Business Information Systems</div>
+      <div class="course-cell" data-n="02">Management of Technology</div>
+      <div class="course-cell" data-n="03">Computer Networks</div>
+      <div class="course-cell" data-n="04">Optimization for Management</div>
+      <div class="course-cell" data-n="05">Programming Abstractions: Python</div>
+      <div class="course-cell" data-n="06">Computer Systems &amp; C Programming</div>
+      <div class="course-cell" data-n="07">Vector Calculus</div>
+      <div class="course-cell" data-n="08">Applied Mathematics</div>
+    </div>
+  </section>
 
-      <div class="section-title">
-        <h2>Other Courses</h2>
-        <span>Past coursework highlights</span>
-      </div>
-      <div class="list fade">
-        <div class="list-item">
-          <div class="tag-row">
-            <span class="tag">Programming Abstractions: Python</span>
-            <span class="tag">Computer Systems and C Programming</span>
-            <span class="tag">Vector Calculus</span>
-            <span class="tag">Applied Math</span>
-          </div>
-        </div>
-      </div>
-    </main>
+  <footer>
+    <a href="/" class="footer-brand"><span class="brand-dot"></span>Sanjiv Simha</a>
+    <p class="footer-copy">&copy; 2026 Sanjiv Simha &middot; sanjivsimha.com</p>
+    <ul class="footer-links">
+      <li><a href="mailto:sasimha@ucsc.edu">Email</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/projects/">Projects</a></li>
+    </ul>
+  </footer>
 
-    <script src="/script.js"></script>
-  </body>
+  <script src="/script.js"></script>
+</body>
 </html>
