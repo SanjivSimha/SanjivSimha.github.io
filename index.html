@@ -1,302 +1,106 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Sanjiv Simha</title>
-  <link rel="icon" href="/images/logo.jpg" type="image/jpeg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 20px;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px 80px;
+    }
+    h1 { font-size: 2.4rem; font-weight: 600; margin: 0 0 4px; }
+    h2 { font-size: 1.4rem; font-weight: 500; margin: 48px 0 12px; border-bottom: 1px solid #333; padding-bottom: 6px; }
+    p, li { color: #ccc; }
+    a { color: #fff; }
+    a:hover { color: #aaa; }
+    hr { border: none; border-top: 1px solid #222; margin: 40px 0; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    strong { color: #fff; }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 32px;
+    }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #444;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+    .available {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursor-ring"></div>
-
-  <!-- INTRO -->
-  <div id="intro">
-    <div class="intro-logo">S<span class="accent">S</span><div class="intro-bar"></div></div>
+<div class="profile">
+  <div class="profile-photo"><img src="/images/homepageimage.jpeg" alt="Sanjiv Simha"/></div>
+  <div>
+    <h1>Sanjiv Simha</h1>
+    <p style="margin:0; color:#aaa; font-size:1rem;">Front-End Software Engineer &middot; UC Santa Cruz</p>
+    <span class="available">Available full-time from June 16, 2026</span>
   </div>
+</div>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <a href="#home" class="nav-brand"><span class="brand-dot"></span>Sanjiv Simha</a>
-    <ul class="nav-links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="mailto:sasimha@ucsc.edu" class="nav-email">Email Me</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-  <div class="nav-mobile">
-    <a href="#home">Home</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="mailto:sasimha@ucsc.edu">Email</a>
-  </div>
+<p>I'm a front-end software engineer at the University of California, Santa Cruz, graduating in June 2026 with a B.S. in Technology and Information Management. I build things at the intersection of technology and business and am actively seeking full-time opportunities starting June 16th, 2026.</p>
+<p>Dean's List: Winter 2024, Winter 2025</p>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-left">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-line"></span>UC Santa Cruz &middot; Junior &middot; TIM
-      </div>
-      <h1 class="hero-title">SANJIV<br><span class="name-blue">SIMHA</span></h1>
-      <p class="hero-role">Web Developer &middot; Product Manager &middot; CS Student</p>
-      <p class="hero-bio">
-        Senior at UC Santa Cruz pursuing B.S. Technology and Information Management.
-        Web Services Technician at UCSC IT. Passionate about building things at the
-        intersection of technology and business.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-blue"><span>View Projects &rarr;</span></a>
-        <a href="mailto:sasimha@ucsc.edu" class="btn btn-ghost">Get in Touch</a>
-      </div>
-    </div>
-    <div class="hero-right">
-      <img src="/images/homepageimage.jpeg" alt="Sanjiv Simha at Shadowbrook Restaurant" loading="eager" />
-      <div class="hero-overlay"></div>
-      <span class="hero-caption">Shadowbrook &middot; Capitola &middot; Dec 2025</span>
-    </div>
-    <div class="hero-ambient"></div>
-  </section>
+<hr>
 
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span class="marquee-item">Web Development</span>
-      <span class="marquee-item">Machine Learning</span>
-      <span class="marquee-item">Computer Networking</span>
-      <span class="marquee-item">Product Development</span>
-      <span class="marquee-item">Product Management</span>
-      <span class="marquee-item">Financial Modeling</span>
-      <span class="marquee-item">UC Santa Cruz</span>
-      <span class="marquee-item">TIM &middot; Class of 2026</span>
-      <span class="marquee-item">Web Development</span>
-      <span class="marquee-item">Machine Learning</span>
-      <span class="marquee-item">Computer Networking</span>
-      <span class="marquee-item">Product Development</span>
-      <span class="marquee-item">Product Management</span>
-      <span class="marquee-item">Financial Modeling</span>
-      <span class="marquee-item">UC Santa Cruz</span>
-      <span class="marquee-item">TIM &middot; Class of 2026</span>
-    </div>
-  </div>
+<h2>Education</h2>
+<p><strong>UC Santa Cruz</strong> &mdash; B.S. Technology &amp; Information Management, graduating June 2026</p>
+<p>Relevant coursework: Computer Networks, Business Information Systems, Management of Technology</p>
 
-  <!-- STATS -->
-  <div class="stats-bar reveal">
-    <div class="stat">
-      <span class="stat-num">8<span class="acc">+</span></span>
-      <span class="stat-label">Portfolio Projects</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">3<span class="acc">rd</span></span>
-      <span class="stat-label">Year at UC Santa Cruz</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">2<span class="acc">&times;</span></span>
-      <span class="stat-label">Dean&rsquo;s List Honoree</span>
-    </div>
-  </div>
+<hr>
 
-  <!-- EDUCATION -->
-  <section class="edu-section reveal" id="education">
-    <div class="section-header">
-      <p class="section-eyebrow">Background</p>
-      <h2 class="section-title">Education</h2>
-    </div>
-    <div class="edu-grid">
-      <div class="edu-main">
-        <p class="edu-date">Fall 2023 &ndash; June 2026</p>
-        <h3 class="edu-uni">UC Santa Cruz</h3>
-        <p class="edu-degree">
-          Bachelor of Science<br>
-          Technology and Information Management
-        </p>
-        <div class="edu-badges">
-          <span class="edu-badge hl">Dean&rsquo;s List &mdash; Winter 2024</span>
-          <span class="edu-badge hl">Dean&rsquo;s List &mdash; Winter 2025</span>
-          <span class="edu-badge">TIM Major</span>
-          <span class="edu-badge">In Progress</span>
-        </div>
-        <p class="edu-body">
-          Currently working as a Web Services Technician with UCSC IT Services,
-          maintaining and enhancing the university&rsquo;s WordPress-based CMS infrastructure
-          and building custom block functionality using PHP, CSS, and JavaScript.
-        </p>
-      </div>
-      <div class="edu-img-side">
-        <img class="edu-seal" src="/images/ucsc-seal.jpg" alt="UC Santa Cruz Seal" loading="lazy" />
-      </div>
-    </div>
-  </section>
+<h2>Projects</h2>
+<ul>
+  <li><a href="https://github.com/SanjivSimha/TCP-Based-Peer-to-Peer-Chat-System-with-Custom-Application-Protocol">TCP-Based Peer-to-Peer Chat System</a> &mdash; Custom protocol, peer discovery, reliable TCP messaging</li>
+  <li><a href="https://docs.google.com/document/d/10Bh6J7LgaS46FXSU45y5DGhK0z4nVjEwPdfF7_kg1sg/edit?usp=sharing">Product Development &mdash; VR System</a> &mdash; End-to-end product dissection, systems analysis</li>
+  <li><a href="https://docs.google.com/document/d/1nk6AzDToGn0FWg5UmJ5cpotULLIUqiUZi-R_jhReJdc/edit?usp=sharing">Competitive Strategy &mdash; Microsoft</a> &mdash; Market landscape, roadmap recommendations</li>
+  <li><a href="https://docs.google.com/document/d/1gYiIRj_sZ9th0EM1dZdyZw8Nd574B_uALraBsGWmH5s/edit?usp=sharing">Financial Modeling &mdash; VR Entertainment</a> &mdash; Revenue forecast, cost structure, ROI analysis</li>
+  <li><a href="https://drive.google.com/drive/folders/1lDpxITlJ0D5zi7RWW_FI4RNxYC29FhSu?usp=sharing">Supply Chain Optimization</a> &mdash; Network analysis, cost-reduction strategy</li>
+  <li><a href="https://drive.google.com/drive/folders/1hB6-wY1ffOEvn9UFnuWS7-7j8zWDPrGm?usp=sharing">Adstream Advertising Optimization</a> &mdash; Performance audit, workflow redesign</li>
+  <li><a href="https://docs.google.com/document/d/1B2bdm3f5RXOAhx1a9tVjMRinmueALRoB8A0oZt9XfEs/edit?usp=sharing">Financial Modeling &mdash; Tech Development</a> &mdash; Investment case, scenario analysis, R&amp;D growth</li>
+  <li><a href="https://docs.google.com/document/d/107WYCIss5HNznVgofspW6yAsGcJiGNmAbHGSxNrTO5M/edit?usp=sharing">Indoor Mobile Robot Design</a> &mdash; Concept architecture, sensing stack, mobility</li>
+</ul>
 
-  <!-- COURSEWORK -->
-  <section class="courses-section reveal">
-    <p class="courses-eyebrow">Coursework</p>
-    <div class="courses-grid">
-      <div class="course-cell" data-n="01">Business Information Systems</div>
-      <div class="course-cell" data-n="02">Management of Technology</div>
-      <div class="course-cell" data-n="03">Computer Networks</div>
-      <div class="course-cell" data-n="04">Optimization for Management</div>
-      <div class="course-cell" data-n="05">Programming Abstractions: Python</div>
-      <div class="course-cell" data-n="06">Computer Systems &amp; C Programming</div>
-      <div class="course-cell" data-n="07">Vector Calculus</div>
-      <div class="course-cell" data-n="08">Applied Mathematics</div>
-    </div>
-  </section>
+<hr>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects-section">
-    <div class="section-header reveal">
-      <p class="section-eyebrow">Portfolio</p>
-      <h2 class="section-title">Projects</h2>
-      <p class="section-sub">A showcase of portfolio projects spanning web development, product strategy, financial modeling, and computer networks.</p>
-    </div>
-    <div class="projects-grid">
+<h2>Contact</h2>
+<ul>
+  <li><a href="mailto:sasimha@ucsc.edu">sasimha@ucsc.edu</a></li>
+  <li><a href="https://github.com/SanjivSimha">github.com/SanjivSimha</a></li>
+</ul>
 
-      <a class="proj-card reveal"
-         href="https://github.com/SanjivSimha/TCP-Based-Peer-to-Peer-Chat-System-with-Custom-Application-Protocol"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/tcpbasedconnection.png" alt="TCP-Based Peer-to-Peer Chat System" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">TCP-Based Peer-to-Peer Chat System</h3>
-          <p class="proj-desc">Custom application protocol with peer discovery and reliable TCP messaging.</p>
-          <span class="proj-link">View on GitHub &rarr;</span>
-        </div>
-      </a>
+<p style="color:#555; font-size:0.85rem;">&copy; 2026 Sanjiv Simha</p>
 
-      <a class="proj-card reveal reveal-d1"
-         href="https://docs.google.com/document/d/10Bh6J7LgaS46FXSU45y5DGhK0z4nVjEwPdfF7_kg1sg/edit?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/proddevforvrsystem.png" alt="Product Development for VR System" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Product Development for VR System</h3>
-          <p class="proj-desc">End-to-end product dissection and systems analysis of a console VR platform.</p>
-          <span class="proj-link">View Report &rarr;</span>
-        </div>
-      </a>
-
-      <a class="proj-card reveal reveal-d2"
-         href="https://docs.google.com/document/d/1nk6AzDToGn0FWg5UmJ5cpotULLIUqiUZi-R_jhReJdc/edit?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/proddevanalysismicrosoft.png" alt="Competitive Strategy Analysis Microsoft" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Product Development &amp; Competitive Strategy &mdash; Microsoft</h3>
-          <p class="proj-desc">Market landscape study with roadmap recommendations for a next-gen productivity suite.</p>
-          <span class="proj-link">View Report &rarr;</span>
-        </div>
-      </a>
-
-      <a class="proj-card reveal"
-         href="https://docs.google.com/document/d/1gYiIRj_sZ9th0EM1dZdyZw8Nd574B_uALraBsGWmH5s/edit?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/financialmodelingvrsystem.png" alt="Financial Modeling VR Entertainment System" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Financial Modeling for Virtual Reality Entertainment System</h3>
-          <p class="proj-desc">Revenue forecast, cost structure, and ROI analysis for an immersive VR entertainment system concept.</p>
-          <span class="proj-link">View Report &rarr;</span>
-        </div>
-      </a>
-
-      <a class="proj-card reveal reveal-d1"
-         href="https://drive.google.com/drive/folders/1lDpxITlJ0D5zi7RWW_FI4RNxYC29FhSu?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/supplychainmanagement.png" alt="Supply Chain Optimization" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Supply Chain Optimization</h3>
-          <p class="proj-desc">Network analysis and cost-reduction strategy to improve fulfillment speed and reliability.</p>
-          <span class="proj-link">View Files &rarr;</span>
-        </div>
-      </a>
-
-      <a class="proj-card reveal reveal-d2"
-         href="https://drive.google.com/drive/folders/1hB6-wY1ffOEvn9UFnuWS7-7j8zWDPrGm?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/adstreamoptimization.png" alt="Adstream Digital Advertising Optimization" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Adstream Digital Advertising Platform Optimization</h3>
-          <p class="proj-desc">Performance audit and workflow redesign to boost campaign throughput and accuracy.</p>
-          <span class="proj-link">View Files &rarr;</span>
-        </div>
-      </a>
-
-      <a class="proj-card reveal"
-         href="https://docs.google.com/document/d/1B2bdm3f5RXOAhx1a9tVjMRinmueALRoB8A0oZt9XfEs/edit?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/financialmodelingfortechdev.png" alt="Financial Modeling for Technology Development" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Financial Modeling for Technology Development</h3>
-          <p class="proj-desc">Investment case modeling with scenario analysis for R&amp;D-led product growth.</p>
-          <span class="proj-link">View Report &rarr;</span>
-        </div>
-      </a>
-
-      <a class="proj-card reveal reveal-d1"
-         href="https://docs.google.com/document/d/107WYCIss5HNznVgofspW6yAsGcJiGNmAbHGSxNrTO5M/edit?usp=sharing"
-         target="_blank" rel="noopener">
-        <div class="proj-img-wrap">
-          <img class="proj-img" src="/images/conceptualdesignforindoormobilerobot.png" alt="Conceptual Design for Indoor Mobile Robot" loading="lazy" />
-          <div class="proj-img-overlay"></div>
-        </div>
-        <div class="proj-body">
-          <h3 class="proj-title">Conceptual Design for Indoor Mobile Robot</h3>
-          <p class="proj-desc">Concept architecture, sensing stack, and mobility analysis for an indoor service robot.</p>
-          <span class="proj-link">View Report &rarr;</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- FOOTER / CONTACT -->
-  <footer id="contact">
-    <div class="footer-inner">
-      <div class="footer-left">
-        <a href="#home" class="footer-brand"><span class="brand-dot"></span>Sanjiv Simha</a>
-        <p class="footer-copy">&copy; 2026 Sanjiv Simha &middot; sanjivsimha.com</p>
-      </div>
-      <div class="footer-center">
-        <p class="footer-contact-label">Get in touch</p>
-        <a href="mailto:sasimha@ucsc.edu" class="footer-email">sasimha@ucsc.edu</a>
-      </div>
-      <ul class="footer-links">
-        <li><a href="mailto:sasimha@ucsc.edu">Email</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="/script.js"></script>
 </body>
 </html>
