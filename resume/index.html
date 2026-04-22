@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Resume — Sanjiv Simha</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 20px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 28px 24px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .back-link {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: #fff; }
+    .back-link svg { width: 16px; height: 16px; }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.2s, background 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #444;
+    }
+    .btn-outline:hover { border-color: #888; background: #111; }
+    .btn-primary {
+      background: #fff;
+      color: #000;
+    }
+    .btn-primary:hover { opacity: 0.88; }
+
+    .viewer-wrap {
+      flex: 1;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 24px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pdf-frame {
+      flex: 1;
+      width: 100%;
+      min-height: calc(100vh - 160px);
+      border: 1px solid #222;
+      border-radius: 8px;
+      background: #111;
+    }
+
+    .fallback {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      min-height: 340px;
+      border: 1px solid #222;
+      border-radius: 8px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+    .fallback a { color: #fff; }
+
+    @media (max-width: 600px) {
+      .topbar { padding: 20px 16px 14px; }
+      .viewer-wrap { padding: 0 16px 32px; }
+      .btn { font-size: 0.8rem; padding: 7px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/" class="back-link">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M10 3L5 8l5 5"/>
+    </svg>
+    Sanjiv Simha
+  </a>
+  <div class="actions">
+    <a href="/sanjivsimha_resume1.pdf" target="_blank" class="btn btn-outline">Open in tab</a>
+    <a href="/sanjivsimha_resume1.pdf" download="SanjivSimha_Resume.pdf" class="btn btn-primary">
+      Download PDF
+    </a>
+  </div>
+</div>
+
+<div class="viewer-wrap">
+  <iframe
+    class="pdf-frame"
+    src="/sanjivsimha_resume1.pdf"
+    title="Sanjiv Simha Resume"
+    onerror="document.querySelector('.pdf-frame').style.display='none'; document.querySelector('.fallback').style.display='flex';"
+  ></iframe>
+  <div class="fallback">
+    <p>PDF preview not available in this browser.</p>
+    <a href="/sanjivsimha_resume1.pdf" download="SanjivSimha_Resume.pdf" class="btn btn-primary">Download Resume</a>
+  </div>
+</div>
+
+</body>
+</html>
