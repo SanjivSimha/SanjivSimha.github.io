@@ -332,6 +332,7 @@
     footer { padding: var(--s5) 0 var(--s4); font-size: 13px; color: var(--mute); }
 
     /* ---------- Responsive ---------- */
+    @media (max-width: 780px) { .topbar .loc { display: none; } }
     @media (max-width: 860px) {
       .guides::before, .guides::after { display: none; }
       .frame { margin-top: var(--s2); border-radius: 22px 22px 0 0; margin-left: 8px; margin-right: 8px; }
@@ -388,7 +389,7 @@
     <header class="rail">
       <div class="topbar">
         <div class="where flex items-center gap-3">
-          <span>San Ramon, CA</span><span class="sep"></span><span id="clock">— PT</span>
+          <span class="loc">San Francisco Bay Area</span><span class="sep loc"></span><span id="clock">— PT</span>
         </div>
         <a href="#top" class="wordmark justify-self-center" aria-label="Sanjiv Simha, back to top">Sanjiv Simha</a>
         <div class="status"><i></i><span>Now at Accenture</span></div>
